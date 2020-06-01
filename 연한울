@@ -1,0 +1,12 @@
+def solution(A):
+  default = 0
+  carNum = 1
+  passNum = 0 
+  for i in range(default+1, len(A)):
+    if A[i] == 1:
+      passNum += carNum       
+    else: 
+      carNum += 1
+    if passNum > 1000000000:
+        return -1
+  return passNum
